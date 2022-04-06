@@ -1,10 +1,7 @@
 # Coded By: Tom Sumner
 # Date: 2020-04-24
-# Version: 0.12.1
-# Description: A simple bot that generates a world map.
-# Usage: python3 bot.py
-# Github: VasilyCodes
-# Discord: VasilyCodes#5215
+# Github: Tom-Sumner
+# Discord: TSumner#5215
 # License: MIT
 # Note: If you use this code, you MUST credit me in your project.
 

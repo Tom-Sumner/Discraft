@@ -16,7 +16,7 @@ Discraft uses custom world generation so you will never play the same map!
 
 
 ### Authors
-> [VasilyCodes](https://www.github.com/VasilyCodes)
+> [Tom-Sumner](https://www.github.com/Tom-Sumner)
 
 #### License
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
