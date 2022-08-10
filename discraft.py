@@ -23,7 +23,7 @@ load_dotenv()
 class Player:
 	def __init__(self, user) -> None:
 		self.user: nextcord.Member = user
-		self.world = World(layout)
+		self.world = World(gen_world())
 		self.y = 2
 
 	def move(self, dir):
@@ -43,8 +43,12 @@ class Controls(nextcord.ui.View):
 		self.user.world.left()
 		await ctx.message.edit(embed=embed(self.user))
 
-	@nextcord.ui.button(label="*", style=nextcord.ButtonStyle.grey, row=2, disabled=True)
+	@nextcord.ui.button(label="*", style=nextcord.ButtonStyle.grey, row=1, disabled=True)
 	async def placeholder1(self, button, ctx: Interaction):
+		pass
+
+	@nextcord.ui.button(label="Dig", style=nextcord.ButtonStyle.green, row=2)
+	async def dig(self, button, ctx: Interaction):
 		pass
 
 	@nextcord.ui.button(label="Right", style=nextcord.ButtonStyle.blurple, row=2)
@@ -52,28 +56,12 @@ class Controls(nextcord.ui.View):
 		self.user.world.right()
 		await ctx.message.edit(embed=embed(self.user))
 
+	@nextcord.ui.button(label="Jump", style=nextcord.ButtonStyle.green, row=1)
+	async def jump(self, button, ctx: Interaction):
+		pass
+
 	@nextcord.ui.button(label="*", style=nextcord.ButtonStyle.grey, row=1, disabled=True)
 	async def placeholder2(self, button, ctx: Interaction):
-		pass
-
-	@nextcord.ui.button(label="Jump", style=nextcord.ButtonStyle.green, row=1)
-	async def up(self, button, ctx: Interaction):
-		pass
-
-	@nextcord.ui.button(label="*", style=nextcord.ButtonStyle.grey, row=1, disabled=True)
-	async def placeholder3(self, button, ctx: Interaction):
-		pass
-
-	@nextcord.ui.button(label="*", style=nextcord.ButtonStyle.grey, row=3, disabled=True)
-	async def placeholder4(self, button, ctx: Interaction):
-		pass
-
-	@nextcord.ui.button(label="Dig", style=nextcord.ButtonStyle.green, row=3)
-	async def down(self, button, ctx: Interaction):
-		pass
-
-	@nextcord.ui.button(label="*", style=nextcord.ButtonStyle.grey, row=3, disabled=True)
-	async def placeholder5(self, button, ctx: Interaction):
 		pass
 
 
